@@ -37,10 +37,15 @@ body {
   color: #111111;
 }
 
+.logo-link {
+  color: #111111;
+  text-decoration: none;
+}
+
 .primary-nav ul {
   display: flex;
   list-style: none;
-  gap: 36px;
+  gap: 32px;
 }
 
 .primary-nav a {
@@ -98,6 +103,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-image.products-hero {
+  height: 38vh;
+  min-height: 260px;
+  background: #000000 url('https://files.use.ai/files/chat%2Ffiles%2F4f356b775793bf0d3caf25f7dbbcae038656ec31023c7d5d15b598a64de3bf27%2Fella-photo-2.jpg?v=1789063060296') center 30% / cover no-repeat;
 }
 
 .hero-overlay {
@@ -235,6 +246,53 @@ body {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+/* Products page */
+.products-cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 800px) {
+  .products-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 3px solid #111111;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #111111;
+}
+
+.product-features {
+  list-style: none;
+  margin-bottom: 24px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.product-features li {
+  padding: 7px 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.product-features li:last-child {
+  border-bottom: none;
+}
+
+.product-card .btn {
+  align-self: center;
 }
 
 /* Contact block */
