@@ -99,7 +99,7 @@ body {
   position: relative;
   height: 60vh;
   min-height: 380px;
-  background: #000000 url('https://files.use.ai/files/chat%2Ffiles%2F83757667c6803e4fdb7fc2b4d45bcbf1f4bc27288c2ec41383d548c76b809ae4%2Fella-photo-1.jpg?v=1789062901077') center 25% / cover no-repeat;
+  background: #000000 url('https://files.use.ai/files/chat%2Ffiles%2F83757667c6803e4fdb7fc2b4d45bcbf1f4bc27288c2ec41383d548c76b809ae4%2Fella-photo-1.jpg?v=1789062901077') center 5% / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,13 +108,13 @@ body {
 .hero-image.products-hero {
   height: 38vh;
   min-height: 260px;
-  background: #000000 url('https://files.use.ai/files/chat%2Ffiles%2F4f356b775793bf0d3caf25f7dbbcae038656ec31023c7d5d15b598a64de3bf27%2Fella-photo-2.jpg?v=1789063060296') center 30% / cover no-repeat;
+  background: #000000 url('https://files.use.ai/files/chat%2Ffiles%2F4f356b775793bf0d3caf25f7dbbcae038656ec31023c7d5d15b598a64de3bf27%2Fella-photo-2.jpg?v=1789063060296') center 10% / cover no-repeat;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.75) 100%);
   filter: grayscale(100%);
 }
 
@@ -124,6 +124,8 @@ body {
   text-align: center;
   color: #ffffff;
   padding: 0 20px;
+  align-self: flex-end;
+  padding-bottom: 40px;
 }
 
 .hero-text h1 {
@@ -186,6 +188,8 @@ body {
   flex-shrink: 0;
   filter: grayscale(100%);
   border: 1px solid #dddddd;
+  object-fit: cover;
+  object-position: top;
 }
 
 .about-flex p {
@@ -242,6 +246,10 @@ body {
   font-size: 0.95rem;
 }
 
+.card a {
+  color: #111111;
+}
+
 @media (max-width: 500px) {
   .cards {
     grid-template-columns: 1fr;
@@ -264,6 +272,10 @@ body {
   flex-direction: column;
   text-align: center;
   border-top: 3px solid #111111;
+}
+
+.product-card h3 {
+  text-align: center;
 }
 
 .product-price {
