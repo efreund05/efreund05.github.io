@@ -8,67 +8,62 @@
 </head>
 <body>
 
-<header class="hero">
-  <nav class="navbar">
+<header class="site-header">
+  <div class="container header-row">
     <div class="logo">Ella Freund</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">What I Do</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <h1>Hi, I'm Ella Freund</h1>
-    <p class="subtitle">Senior Marketing Student &mdash; Iowa State University</p>
-    <p class="subtitle-small">Photography Business Owner</p>
-    <a href="#contact" class="btn">Get In Touch</a>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">What I Do</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container secondary-nav-row">
+    <nav class="secondary-nav">
+      <a href="#about">Marketing</a>
+      <span class="divider">&middot;</span>
+      <a href="#work">Photography</a>
+      <span class="divider">&middot;</span>
+      <a href="#skills">Qualifications</a>
+    </nav>
   </div>
 </header>
 
-<div class="stats-strip">
-  <div class="container stats-grid">
-    <div class="stat">
-      <span class="stat-label">Marketing</span>
-    </div>
-    <div class="stat">
-      <span class="stat-label">Photography</span>
-    </div>
-    <div class="stat">
-      <span class="stat-label">Iowa State University</span>
-    </div>
+<div class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Hi, I'm Ella Freund</h1>
+    <p>Senior Marketing Student &mdash; Iowa State University &nbsp;|&nbsp; Photography Business Owner</p>
   </div>
 </div>
 
-<main>
+<main class="container layout">
 
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="https://files.use.ai/files/chat%2Ffiles%2F83757667c6803e4fdb7fc2b4d45bcbf1f4bc27288c2ec41383d548c76b809ae4%2Fella-photo-1.jpg?v=1789062901077" alt="Ella Freund">
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I'm a senior marketing student at Iowa State University with a passion for turning creative
-          ideas into compelling stories. Alongside my studies, I run my own photography business,
-          capturing portraits, events, and branding content for clients.
-        </p>
-        <p>
-          I love blending strategic marketing thinking with a photographer's eye for composition and
-          detail &mdash; and I'm always looking for new ways to help brands and people tell their
-          story visually.
-        </p>
-      </div>
-    </div>
-  </section>
+  <div class="main-content">
 
-  <section id="work" class="section alt-bg">
-    <div class="container">
-      <h2 class="center">What I Do</h2>
+    <section id="about" class="block">
+      <h2>About Me</h2>
+      <div class="about-flex">
+        <img src="https://files.use.ai/files/chat%2Ffiles%2F4f356b775793bf0d3caf25f7dbbcae038656ec31023c7d5d15b598a64de3bf27%2Fella-photo-2.jpg?v=1789063060296" alt="Ella Freund" class="about-photo">
+        <div>
+          <p>
+            I'm a senior marketing student at Iowa State University with a passion for turning creative
+            ideas into compelling stories. Alongside my studies, I run my own photography business,
+            capturing portraits, events, and branding content for clients.
+          </p>
+          <p>
+            I love blending strategic marketing thinking with a photographer's eye for composition and
+            detail &mdash; and I'm always looking for new ways to help brands and people tell their
+            story visually.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="block">
+      <h2>What I Do</h2>
       <div class="cards">
         <div class="card">
           <div class="card-icon">M</div>
@@ -89,34 +84,51 @@
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="center">Skills &amp; Qualifications</h2>
-      <div class="skills-list">
-        <span class="skill-chip">Microsoft Excel</span>
-        <span class="skill-chip">Microsoft Word</span>
-        <span class="skill-chip">Microsoft Access</span>
-        <span class="skill-chip">Microsoft PowerPoint</span>
-        <span class="skill-chip">Social Media Platforms</span>
-        <span class="skill-chip">Digital &amp; Online Research</span>
-        <span class="skill-chip">Teamwork &amp; Collaboration</span>
-        <span class="skill-chip">Strong Work Ethic</span>
-        <span class="skill-chip">Effective Communication</span>
-        <span class="skill-chip">Active Listening</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <div class="container center">
+    <section id="contact" class="block contact-block">
       <h2>Let's Connect</h2>
       <p>Interested in working together or booking a photography session? I'd love to hear from you.</p>
-      <a href="mailto:efreund@iastate.edu" class="btn btn-light">efreund@iastate.edu</a>
+      <a href="mailto:efreund@iastate.edu" class="btn">efreund@iastate.edu</a>
+    </section>
+
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="widget" id="skills">
+      <h3 class="widget-title">Skills &amp; Qualifications</h3>
+      <ul class="widget-list">
+        <li>Microsoft Excel</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft Access</li>
+        <li>Microsoft PowerPoint</li>
+        <li>Social Media Platforms</li>
+        <li>Digital &amp; Online Research</li>
+        <li>Teamwork &amp; Collaboration</li>
+        <li>Strong Work Ethic</li>
+        <li>Effective Communication</li>
+        <li>Active Listening</li>
+      </ul>
     </div>
-  </section>
+
+    <div class="widget">
+      <h3 class="widget-title">Quick Links</h3>
+      <ul class="widget-list widget-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">What I Do</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <h3 class="widget-title">Get In Touch</h3>
+      <p class="widget-text">Iowa State University</p>
+      <a href="mailto:efreund@iastate.edu" class="widget-link">efreund@iastate.edu</a>
+    </div>
+
+  </aside>
 
 </main>
 
