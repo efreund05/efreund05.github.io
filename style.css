@@ -540,6 +540,12 @@ body {
   color: #ff9500;
 }
 
+.secondary-nav a:focus-visible {
+  color: #ff9500;
+  outline: 2px solid #ff9500;
+  outline-offset: 3px;
+}
+
 .products-hero {
   position: relative;
   min-height: 280px;
@@ -666,9 +672,13 @@ body {
   background: #f8f8f8;
 }
 
-.package-table td:first-child {
+.package-table th[scope="row"] {
   font-weight: 700;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
   color: #000;
+  background: transparent;
 }
 
 .sr-only {
@@ -1005,6 +1015,7 @@ body {
   .package-table,
   .package-table tbody,
   .package-table tr,
+  .package-table th[scope="row"],
   .package-table td {
     display: block;
     width: 100%;
@@ -1015,15 +1026,18 @@ body {
     margin-bottom: 16px;
   }
 
+  .package-table th[scope="row"],
   .package-table td {
     border-bottom: 1px solid #f0f0f0;
     padding: 12px 16px;
+    text-align: left;
   }
 
   .package-table td:last-child {
     border-bottom: 0;
   }
 
+  .package-table th[scope="row"]::before,
   .package-table td::before {
     content: attr(data-label);
     display: block;
