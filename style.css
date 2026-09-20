@@ -1037,7 +1037,6 @@ body {
     border-bottom: 0;
   }
 
-  .package-table th[scope="row"]::before,
   .package-table td::before {
     content: attr(data-label);
     display: block;
