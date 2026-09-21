@@ -338,6 +338,17 @@ body {
   margin-top: 40px;
 }
 
+.services-actions .btn {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.services-actions .btn:hover {
+  background: #ff9500;
+  border-color: #ff9500;
+}
+
 /* ===== ABOUT SECTION ===== */
 .about-section {
   padding: 100px 0;
