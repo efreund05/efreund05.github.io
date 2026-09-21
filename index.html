@@ -196,13 +196,21 @@
             <p><strong>Email:</strong> efreund@iastate.edu</p>
         </div>
         <div class="contact-form">
-            <h3>Send a Message</h3>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Message" rows="4" required></textarea>
-                <button type="submit" class="btn btn-dark">Send Message</button>
-            </form>
+            <h3 id="contact-form-heading">Session Inquiry Form</h3>
+            <p id="contact-form-description" class="contact-form-intro">Complete the inquiry form below to share your project details and preferred session information.</p>
+            <p id="contact-form-status" class="sr-only">If the embedded form does not load, use the fallback link below to open the inquiry form in a new tab.</p>
+            <div class="contact-form-embed">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdNZ858kU4jsHSBAEJT9F7eaepjCv1SLg-IusTbsCHtkSTolQ/viewform?embedded=true"
+                    title="Ella Freund session inquiry Google Form"
+                    aria-labelledby="contact-form-heading"
+                    aria-describedby="contact-form-description contact-form-status"
+                    loading="lazy"></iframe>
+            </div>
+            <p class="contact-form-fallback">
+                Having trouble viewing the form?
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNZ858kU4jsHSBAEJT9F7eaepjCv1SLg-IusTbsCHtkSTolQ/viewform" target="_blank" rel="noopener noreferrer">Open the inquiry form in a new tab</a>.
+            </p>
         </div>
     </div>
 </section>
