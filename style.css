@@ -314,10 +314,6 @@ body {
   padding: 0 20px 20px;
 }
 
-.service-meta div + div {
-  margin-top: 14px;
-}
-
 .service-meta dt {
   font-size: 0.78rem;
   font-weight: 800;
@@ -327,10 +323,15 @@ body {
   margin-bottom: 3px;
 }
 
+.service-meta dt:not(:first-of-type) {
+  margin-top: 14px;
+}
+
 .service-meta dd {
   color: #666;
   font-size: 0.95rem;
   line-height: 1.6;
+  margin-left: 0;
 }
 
 .services-actions {
