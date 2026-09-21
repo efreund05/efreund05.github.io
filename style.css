@@ -255,6 +255,25 @@ body {
   background: #f8f8f8;
 }
 
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.section-heading p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -289,6 +308,33 @@ body {
   font-size: 0.95rem;
   color: #666;
   line-height: 1.6;
+}
+
+.service-meta {
+  padding: 0 20px 20px;
+}
+
+.service-meta div + div {
+  margin-top: 14px;
+}
+
+.service-meta dt {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 3px;
+}
+
+.service-meta dd {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.services-actions {
+  margin-top: 40px;
 }
 
 /* ===== ABOUT SECTION ===== */
